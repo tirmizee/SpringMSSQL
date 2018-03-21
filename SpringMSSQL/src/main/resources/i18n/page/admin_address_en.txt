@@ -1,0 +1,9 @@
+province = Province
+district = District
+subdistrict = SubDistrict
+postcode = PostCode
+show = Show
+entries = Entries
+order = Order
+btn_clear = Clear
+btn_search = Search

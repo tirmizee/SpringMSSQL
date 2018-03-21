@@ -1,0 +1,5 @@
+menu_main = Main
+menu_role_management = Role Management
+menu_address = Address Management
+menu_permission = Permission
+menu_role_assignrole = Role

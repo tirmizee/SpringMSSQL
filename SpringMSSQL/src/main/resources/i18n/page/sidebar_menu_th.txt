@@ -1,0 +1,5 @@
+menu_main = หน้าหลัก
+menu_role_management = จัดการบทบาท
+menu_address = จัดการที่อยู่
+menu_permission = ข้อมูลสิท
+menu_role_assignrole = บทบาท

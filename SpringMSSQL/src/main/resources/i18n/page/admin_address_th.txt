@@ -1,0 +1,9 @@
+province = จังหวัด
+district = อำเภอ
+subdistrict = ตำบล
+postcode = รหัส ไปรษณีย์
+show = แสดง
+entries = รายการ
+order = ลำดับ
+btn_clear = เคลีย
+btn_search = ค้นหา
