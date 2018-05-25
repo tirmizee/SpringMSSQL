@@ -13,8 +13,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 import com.tirmizee.backend.dao.MemberDao;
 import com.tirmizee.backend.dao.PermissionDao;
-import com.tirmizee.repository.entities.Member;
-import com.tirmizee.repository.entities.Permission;
+import com.tirmizee.repository.domain.Member;
+import com.tirmizee.repository.domain.Permission;
 
 public class UserDetailsServiceImpl implements UserDetailsService{
 	

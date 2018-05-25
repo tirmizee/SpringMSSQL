@@ -11,8 +11,8 @@ import org.springframework.stereotype.Repository;
 
 import com.tirmizee.backend.rest.permission.data.PermissionCriteriaDTO;
 import com.tirmizee.jdbcrepository.sql.SqlGenerator;
-import com.tirmizee.repository.domain.PermissionRepositoryImpl;
-import com.tirmizee.repository.entities.Permission;
+import com.tirmizee.repository.PermissionRepositoryImpl;
+import com.tirmizee.repository.domain.Permission;
 
 @Repository("PermissionDao")
 public class PermissionDaoImpl extends PermissionRepositoryImpl implements PermissionDao {

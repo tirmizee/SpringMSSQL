@@ -3,10 +3,10 @@ package com.tirmizee.backend.rest.address.data;
 import java.io.Serializable;
 
 import com.tirmizee.core.annotaion.SortColumn;
-import com.tirmizee.repository.domain.DistrictRepository;
-import com.tirmizee.repository.domain.PostCodeRepository;
-import com.tirmizee.repository.domain.ProvinceRepository;
-import com.tirmizee.repository.domain.SubDistrictRepository;
+import com.tirmizee.repository.DistrictRepository;
+import com.tirmizee.repository.PostCodeRepository;
+import com.tirmizee.repository.ProvinceRepository;
+import com.tirmizee.repository.SubDistrictRepository;
 
 public class AddressDTO implements Serializable{
 

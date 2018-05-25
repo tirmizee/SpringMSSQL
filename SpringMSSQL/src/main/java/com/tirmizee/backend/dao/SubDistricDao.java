@@ -6,7 +6,7 @@ import org.springframework.data.domain.Pageable;
 
 import com.tirmizee.backend.rest.address.data.AddressCritiriaDTO;
 import com.tirmizee.backend.rest.address.data.AddressDTO;
-import com.tirmizee.repository.domain.SubDistrictRepository;
+import com.tirmizee.repository.SubDistrictRepository;
 
 public interface SubDistricDao  extends SubDistrictRepository{
 	

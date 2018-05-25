@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.sql.Date;
 
 import com.tirmizee.core.annotaion.SortColumn;
-import com.tirmizee.repository.domain.PermissionRepository;
+import com.tirmizee.repository.PermissionRepository;
 
 public class PermissionDTO implements Serializable {
 

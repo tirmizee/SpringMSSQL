@@ -1,6 +1,5 @@
 package com.tirmizee.backend.rest.permission;
 
-import javax.servlet.ServletContext;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,32 +11,25 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tirmizee.backend.dao.PermissionDao;
 import com.tirmizee.backend.rest.permission.data.PermissionCriteriaDTO;
 import com.tirmizee.backend.rest.permission.data.PermissionDTO;
 import com.tirmizee.backend.rest.permission.data.PermissionEditDTO;
 import com.tirmizee.backend.service.PermissionService;
 import com.tirmizee.core.annotaion.RestPostMapping;
-import com.tirmizee.core.commons.CustomMapper;
+import com.tirmizee.core.component.GTMapper;
 import com.tirmizee.core.datatable.RequestData;
 import com.tirmizee.core.datatable.ResponseData;
-import com.tirmizee.repository.entities.Permission;
+import com.tirmizee.repository.domain.Permission;
 
 @RestController
 @RequestMapping(value="/service/permission")
 public class RestPermissionController {
 	
 	@Autowired
-	PermissionDao permissionDao;
+	private GTMapper mapper;
 	
 	@Autowired
-	CustomMapper mapper;
-	
-	@Autowired
-	ServletContext servletContext;
-	
-	@Autowired
-	PermissionService permissionService; 
+	private PermissionService permissionService; 
 	
 	@PreAuthorize("hasAnyAuthority('PER01')")
 	@RestPostMapping(value="/findAll")

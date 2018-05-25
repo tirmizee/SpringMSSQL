@@ -1,4 +1,4 @@
-package com.tirmizee.repository.entities;
+package com.tirmizee.repository.domain;
 
 import java.sql.Date;
 

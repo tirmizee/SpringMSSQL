@@ -17,7 +17,6 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Configuration
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
 	
-	
 	@Bean
 	public ViewResolver viewResolver(){
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
@@ -35,8 +34,6 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 	    return resolver;
     }
 	
-	
-	
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
@@ -46,20 +43,16 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
     public void addViewControllers(ViewControllerRegistry registry) {
         
     }
-	
-	
 
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		LocaleChangeInterceptor localeInterceptor = new LocaleChangeInterceptor(){
-
 			@Override
 			protected Locale parseLocaleValue(String locale) {
 				locale = locale.replaceAll("[^a-zA-Z]", "").toLowerCase();
 				if(locale.length() < 2){ return Locale.ENGLISH; }
 				return super.parseLocaleValue(locale.substring(0, 2)) ;
 			}
-			
 		};
         localeInterceptor.setParamName("lang");
         registry.addInterceptor(localeInterceptor);

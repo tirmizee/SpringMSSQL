@@ -9,10 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.tirmizee.backend.dao.MemberDao;
 import com.tirmizee.backend.dao.PermissionDao;
-import com.tirmizee.backend.dao.RoleDao;
-import com.tirmizee.core.commons.CustomMapper;
+import com.tirmizee.core.component.GTMapper;
 
 @Controller
 public class RootWebController {
@@ -20,14 +18,8 @@ public class RootWebController {
 	private static final Logger LOGGER =  Logger.getLogger(RootWebController.class);
 	
 	@Autowired @Lazy
- 	CustomMapper mapper;
+ 	private GTMapper mapper;
 
-	@Autowired
-	MemberDao memberDao;
-	
-	@Autowired
-	RoleDao roleDao; 
-	
 	@Autowired
 	PermissionDao permissionDao;
 	

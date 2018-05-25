@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.tirmizee.backend.rest.permission.data.PermissionCriteriaDTO;
 import com.tirmizee.core.config.AppConfig;
-import com.tirmizee.repository.entities.Permission;
+import com.tirmizee.repository.domain.Permission;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration

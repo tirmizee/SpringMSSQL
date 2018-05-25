@@ -4,8 +4,8 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Repository;
 
 import com.tirmizee.jdbcrepository.sql.SqlGenerator;
-import com.tirmizee.repository.domain.MemberRepositoryImpl;
-import com.tirmizee.repository.entities.Member;
+import com.tirmizee.repository.MemberRepositoryImpl;
+import com.tirmizee.repository.domain.Member;
 
 
 @Repository("MemberDao")

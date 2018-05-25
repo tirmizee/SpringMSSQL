@@ -4,10 +4,6 @@ import java.util.Locale;
 
 import org.springframework.context.HierarchicalMessageSource;
 
-/**
- * @author pratya yeekhaday
- *
- */
 public interface MessageSourceUtils extends HierarchicalMessageSource{
 	
 	String getMessage(String code, Object...args);

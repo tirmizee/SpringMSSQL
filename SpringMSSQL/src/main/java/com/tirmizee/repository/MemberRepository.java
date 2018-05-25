@@ -1,7 +1,7 @@
-package com.tirmizee.repository.domain;
+package com.tirmizee.repository;
 
 import com.tirmizee.jdbcrepository.JdbcRepository;
-import com.tirmizee.repository.entities.Member;
+import com.tirmizee.repository.domain.Member;
 
 public interface MemberRepository extends JdbcRepository<Member, String> {
 	

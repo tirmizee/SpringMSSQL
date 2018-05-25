@@ -1,4 +1,4 @@
-package com.tirmizee.repository.domain;
+package com.tirmizee.repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import com.tirmizee.jdbcrepository.AbstractJdbcRepository;
 import com.tirmizee.jdbcrepository.RowUnmapper;
-import com.tirmizee.repository.entities.SubDistrict;
+import com.tirmizee.repository.domain.SubDistrict;
 
 
 @Repository("SubDistrictRepository")

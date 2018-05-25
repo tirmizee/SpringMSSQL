@@ -1,7 +1,7 @@
-package com.tirmizee.repository.domain;
+package com.tirmizee.repository;
 
 import com.tirmizee.jdbcrepository.JdbcRepository;
-import com.tirmizee.repository.entities.PostCode;
+import com.tirmizee.repository.domain.PostCode;
 
 public interface PostCodeRepository extends JdbcRepository<PostCode, Long>{
 	

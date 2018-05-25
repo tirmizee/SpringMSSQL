@@ -1,23 +1,23 @@
 package com.tirmizee.backend.dao;
 
-import static com.tirmizee.repository.domain.DistrictRepository.DISTRICTS;
-import static com.tirmizee.repository.domain.DistrictRepository.DISTRICTS_DISTRICTID;
-import static com.tirmizee.repository.domain.DistrictRepository.DISTRICTS_DISTRICTNAME_EN;
-import static com.tirmizee.repository.domain.DistrictRepository.DISTRICTS_DISTRICTNAME_TH;
-import static com.tirmizee.repository.domain.DistrictRepository.DISTRICTS_FK_PROVINCEID;
-import static com.tirmizee.repository.domain.DistrictRepository.DISTRICTNAME_EN;
-import static com.tirmizee.repository.domain.DistrictRepository.DISTRICTNAME_TH;
-import static com.tirmizee.repository.domain.PostCodeRepository.POSTCODES;
-import static com.tirmizee.repository.domain.PostCodeRepository.POSTCODES_POSTCODEID;
-import static com.tirmizee.repository.domain.PostCodeRepository.POSTCODES_SUBDISTRICTCODE;
-import static com.tirmizee.repository.domain.PostCodeRepository.POSTCODES_ZIPCODE;
-import static com.tirmizee.repository.domain.PostCodeRepository.ZIPCODE;
-import static com.tirmizee.repository.domain.ProvinceRepository.PROVINCES_PROVINCENAME_EN;
-import static com.tirmizee.repository.domain.ProvinceRepository.PROVINCES_PROVINCENAME_TH;
-import static com.tirmizee.repository.domain.ProvinceRepository.PROVINCES_PROVINCE_ID;
-import static com.tirmizee.repository.domain.ProvinceRepository.PROVINCE_NAME_EN;
-import static com.tirmizee.repository.domain.ProvinceRepository.PROVINCE_NAME_TH;
-import static com.tirmizee.repository.domain.ProvinceRepository.PROVINCS;
+import static com.tirmizee.repository.DistrictRepository.DISTRICTNAME_EN;
+import static com.tirmizee.repository.DistrictRepository.DISTRICTNAME_TH;
+import static com.tirmizee.repository.DistrictRepository.DISTRICTS;
+import static com.tirmizee.repository.DistrictRepository.DISTRICTS_DISTRICTID;
+import static com.tirmizee.repository.DistrictRepository.DISTRICTS_DISTRICTNAME_EN;
+import static com.tirmizee.repository.DistrictRepository.DISTRICTS_DISTRICTNAME_TH;
+import static com.tirmizee.repository.DistrictRepository.DISTRICTS_FK_PROVINCEID;
+import static com.tirmizee.repository.PostCodeRepository.POSTCODES;
+import static com.tirmizee.repository.PostCodeRepository.POSTCODES_POSTCODEID;
+import static com.tirmizee.repository.PostCodeRepository.POSTCODES_SUBDISTRICTCODE;
+import static com.tirmizee.repository.PostCodeRepository.POSTCODES_ZIPCODE;
+import static com.tirmizee.repository.PostCodeRepository.ZIPCODE;
+import static com.tirmizee.repository.ProvinceRepository.PROVINCES_PROVINCENAME_EN;
+import static com.tirmizee.repository.ProvinceRepository.PROVINCES_PROVINCENAME_TH;
+import static com.tirmizee.repository.ProvinceRepository.PROVINCES_PROVINCE_ID;
+import static com.tirmizee.repository.ProvinceRepository.PROVINCE_NAME_EN;
+import static com.tirmizee.repository.ProvinceRepository.PROVINCE_NAME_TH;
+import static com.tirmizee.repository.ProvinceRepository.PROVINCS;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -34,7 +34,7 @@ import org.springframework.stereotype.Repository;
 import com.tirmizee.backend.rest.address.data.AddressCritiriaDTO;
 import com.tirmizee.backend.rest.address.data.AddressDTO;
 import com.tirmizee.jdbcrepository.sql.QueryBuilder;
-import com.tirmizee.repository.domain.SubDistrictRepositoryImpl;
+import com.tirmizee.repository.SubDistrictRepositoryImpl;
 
 @Repository("SubDistricDao")
 public class SubDistricDaoImpl extends SubDistrictRepositoryImpl implements SubDistricDao{

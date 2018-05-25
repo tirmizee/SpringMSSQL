@@ -1,7 +1,7 @@
-package com.tirmizee.repository.domain;
+package com.tirmizee.repository;
 
 import com.tirmizee.jdbcrepository.JdbcRepository;
-import com.tirmizee.repository.entities.District;
+import com.tirmizee.repository.domain.District;
 
 public interface DistrictRepository extends JdbcRepository<District, Integer>{
 

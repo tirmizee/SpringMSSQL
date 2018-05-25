@@ -11,20 +11,20 @@ import com.tirmizee.backend.dao.PermissionDao;
 import com.tirmizee.backend.rest.permission.data.PermissionCriteriaDTO;
 import com.tirmizee.backend.rest.permission.data.PermissionDTO;
 import com.tirmizee.backend.rest.permission.data.PermissionEditDTO;
-import com.tirmizee.core.commons.CustomMapper;
+import com.tirmizee.core.component.GTMapper;
 import com.tirmizee.core.datatable.PageRequestHelper;
 import com.tirmizee.core.datatable.RequestData;
-import com.tirmizee.repository.entities.Permission;
+import com.tirmizee.repository.domain.Permission;
 
 @Service("PermissionService")
 public class PermissionServiceImpl implements PermissionService {
 	
 
 	@Autowired 
-	PermissionDao permissionDao; 
+	private PermissionDao permissionDao; 
 	
 	@Autowired
-	CustomMapper mapper;
+	private GTMapper mapper;
 	
 	@Override
 	public Page<Permission> findAll(RequestData<PermissionCriteriaDTO> request) {
