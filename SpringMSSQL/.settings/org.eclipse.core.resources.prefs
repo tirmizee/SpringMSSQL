@@ -1,2 +1,4 @@
 eclipse.preferences.version=1
+encoding//src/main/resources/i18n/page/admin_address_th.txt=UTF-8
 encoding//src/main/resources/report/Cherry.jrxml=UTF-8
+encoding//src/main/webapp/WEB-INF/views/pages/calendar.jsp=UTF-8

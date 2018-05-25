@@ -22,7 +22,7 @@
         <li class="treeview menu-role" >
           <a href="#">
             <i class="fa fa-briefcase" style="height: 20px;"></i>
-            <span>${label.menu_role_management}</span>
+            <span>Role Management</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right" ></i>
             </span>
@@ -33,6 +33,7 @@
           </ul>
         </li>
         <li class="treeview menu-address"><a href="${pageContext.request.contextPath}/admin/address"><i class="fa fa-globe " style="height: 20px;"></i> <span>Address</span></a></li>
+        <li class="treeview menu-calendar"><a href="${pageContext.request.contextPath}/admin/calendar"><i class="fa fa-globe " style="height: 20px;"></i> <span>Calendar</span></a></li>
        </ul>
        
          

@@ -79,6 +79,13 @@ public class WebAdminController {
 	}
 	
 	@PreAuthorize("hasAnyAuthority('AD000')")
+	@GetMapping(value="/admin/calendar")
+	public ModelAndView calendar(Locale locale,ModelAndView model){
+		model.setViewName("pages/calendar");
+		return model;
+	}
+	
+	@PreAuthorize("hasAnyAuthority('AD000')")
 	@GetMapping(value="/admin/role")
 	public ModelAndView role(Locale locale,ModelAndView model){
 		final String resourcePath = "admin_address_";
